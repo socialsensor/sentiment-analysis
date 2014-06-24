@@ -1,0 +1,115 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+  
+  	<groupId>gr.iti.mklab</groupId>
+  	<artifactId>sentiment-analysis</artifactId>
+  	<version>0.1-SNAPSHOT</version>
+  	<packaging>jar</packaging>
+	
+  	<name>sentiment-analysis</name>
+  	<url>https://github.com/socialsensor/sentiment-analysis</url>
+  	<description>Sentiment analysis framework developed by CERTH.</description>
+  
+  	<parent>
+  		<groupId>org.sonatype.oss</groupId>
+  		<artifactId>oss-parent</artifactId>
+  		<version>7</version>
+  	</parent>
+    
+ 	<developers>
+ 		<developer>
+            <id>adtsakal</id>
+            <name>Adam Tsakalidis</name>
+            <email>lmantziou@iti.gr</email>
+        </developer>
+        <developer>
+            <id>manosetro</id>
+            <name>Manos Schinas</name>
+            <email>manosetro@iti.gr</email>
+        </developer>
+  	</developers>
+    
+  	<licenses>
+   		<license>
+      		<name>The Apache Software License, Version 2.0</name>
+      		<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+      		<distribution>repo</distribution>
+    	</license>
+   	</licenses>
+  
+  	<scm>
+       	<connection>scm:git:git@github.com:socialsensor/sentiment-analysis.git</connection>
+    	<developerConnection>scm:git:git@github.com:socialsensor/sentiment-analysis.git</developerConnection>
+        <url>git@github.com:socialsensor/sentiment-analysis.git</url>
+    </scm>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+    
+  	<dependencies>
+  		<dependency>
+  			<groupId>org.apache.commons</groupId>
+  			<artifactId>commons-lang3</artifactId>
+  			<version>3.2.1</version>
+  		</dependency>
+  		<dependency>
+  			<groupId>org.apache.commons</groupId>
+  			<artifactId>commons-collections4</artifactId>
+  			<version>4.0</version>
+  		</dependency>
+  		<dependency>
+  			<groupId>edu.stanford.nlp</groupId>
+  			<artifactId>stanford-corenlp</artifactId>
+  			<version>3.3.1</version>
+  		</dependency>
+  		<dependency>
+  			<groupId>nz.ac.waikato.cms.weka</groupId>
+  			<artifactId>weka-stable</artifactId>
+  			<version>3.6.10</version>
+  		</dependency>
+  	</dependencies>
+  
+  	<repositories />
+    <pluginRepositories />
+                
+    <build>
+        <plugins> 
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>2.5.1</version>
+                <configuration>
+                    <source>1.6</source>
+                    <target>1.6</target>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-source-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>attach-sources</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-javadoc-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <id>attach-javadocs</id>
+                        <goals>
+                            <goal>jar</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
+        </plugins>
+    </build>
+    
+</project>
