@@ -66,8 +66,13 @@
   		</dependency>
   		<dependency>
   			<groupId>nz.ac.waikato.cms.weka</groupId>
-  			<artifactId>weka-stable</artifactId>
-  			<version>3.6.10</version>
+  			<artifactId>weka-dev</artifactId>
+  			<version>3.7.10</version>
+  		</dependency>
+  		<dependency>
+  			<groupId>nz.ac.waikato.cms.weka</groupId>
+  			<artifactId>LibSVM</artifactId>
+  			<version>1.0.3</version>
   		</dependency>
   	</dependencies>
   
