@@ -31,7 +31,7 @@ public class TweetPreprocessor {
 		tp = new TextPreprocessor(main_folder);
 		cp = new ComplexPreprocessor();
 		fp = new FeaturePreprocessor(main_folder);
-		tagger = new MaxentTagger("/home/atsak/Desktop/Ensemble/datasets/gate-EN-twitter.model");
+		tagger = new MaxentTagger(main_folder+"datasets/gate-EN-twitter.model");
 		try {
 			lp = new LexiconPreprocessor(main_folder);
 		} catch (IOException e) {
@@ -62,6 +62,7 @@ public class TweetPreprocessor {
 		setLexiconInstances();
 		return dataset;
 	}
+	
 	
 	/**Instantiates the text-based Instances*/
 	private String getTextInstances(){

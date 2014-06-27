@@ -315,6 +315,7 @@ public class LexiconPreprocessor {
 				if (k>34)
 					negative.add(line.toLowerCase());
 			}
+			brdr.close();
 		}catch (FileNotFoundException fnf){
 			System.out.println("Negative File not found");
 		} catch (IOException e) {
