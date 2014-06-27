@@ -9,7 +9,7 @@ import weka.core.converters.ConverterUtils.DataSource;
 public class Processor {
 
 	// Alter those three parameters for testing:
-	static String main_folder = "/home/atsak/Desktop/other/";	// the path to the (unzipped) "resources" folder 
+	static String main_folder = "/home/atsak/Desktop/other/";		// the path to the "resources" folder 
 	static String test_dataset = "Liebherr";						// available options for demo: goethe, Liebherr, Cisco
 	static boolean useSlidingWindowForTraining = false;				// if set to "true", only the last 1,000 documents will be used for the training of the ensemble classifier
 	
@@ -18,7 +18,7 @@ public class Processor {
 		LinkedList<String> lt = getData(test_dataset);				// read some data
 		SentimentAnalyser analyser = new SentimentAnalyser(main_folder, useSlidingWindowForTraining, test_dataset);
 		for (int i=0; i<lt.size(); i++){
-			String out = analyser.getPolarity(lt.get(i));			// any text may be passed as an argument here
+			System.out.println(analyser.getPolarity(lt.get(i)));	// any text may be passed as an argument here
 			//System.out.println(i+"\t"+out);
 		}
 	}
