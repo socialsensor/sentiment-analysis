@@ -4,7 +4,7 @@
   
   	<groupId>gr.iti.mklab</groupId>
   	<artifactId>sentiment-analysis</artifactId>
-  	<version>0.1-SNAPSHOT</version>
+  	<version>0.1</version>
   	<packaging>jar</packaging>
 	
   	<name>sentiment-analysis</name>
@@ -42,7 +42,8 @@
        	<connection>scm:git:git@github.com:socialsensor/sentiment-analysis.git</connection>
     	<developerConnection>scm:git:git@github.com:socialsensor/sentiment-analysis.git</developerConnection>
         <url>git@github.com:socialsensor/sentiment-analysis.git</url>
-    </scm>
+      <tag>sentiment-analysis-0.1</tag>
+  </scm>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
