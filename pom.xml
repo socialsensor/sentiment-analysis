@@ -2,7 +2,7 @@
 
 	<modelVersion>4.0.0</modelVersion>
   
-  	<groupId>gr.iti.mklab</groupId>
+  	<groupId>eu.socialsensor</groupId>
   	<artifactId>sentiment-analysis</artifactId>
   	<version>0.1-SNAPSHOT</version>
   	<packaging>jar</packaging>
